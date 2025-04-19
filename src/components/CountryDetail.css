@@ -123,12 +123,12 @@ body {
 }
 
 .fade-out {
-    animation: fadeOut 0.5s forwards;
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateY(10px);
   }
-  
-  @keyframes fadeOut {
-    to {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-  }
+}

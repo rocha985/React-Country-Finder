@@ -17,7 +17,7 @@ function App() {
           <Route
             path="/"
             element={
-              <div className='home'>
+              <div className="home">
                 <header className="app-header">
                   <img src={logo} alt="Logo" className="app-logo" />
                 </header>
@@ -29,7 +29,10 @@ function App() {
               </div>
             }
           />
-          <Route path="/country/:name" element={<CountryDetail setResults={setResults}/>} />
+          <Route
+            path="/country/:name"
+            element={<CountryDetail setResults={setResults} />}
+          />
         </Routes>
       </div>
     </Router>
