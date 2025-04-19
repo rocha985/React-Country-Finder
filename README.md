@@ -1,14 +1,6 @@
 # React Country Finder
 
-Project built with React to practice working with APIs and React Router. It allows users to search for countries and see basic information like the flag, population, and capital.
-
-
-
-## Features
-
-- Simple search bar to find countries by name
-- Country details page with flag and info
-
+Project built with React and Vite to practice working with APIs and React Router. It allows users to search for countries and see basic information like the flag, population, and capital. Inspired by the Google search layout.
 
 
 ## API
