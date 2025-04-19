@@ -18,4 +18,4 @@ This is a small project built with React to practice working with APIs and React
 
 ## API
 
-= Data is from REST Countries, a free and open source API.
+- Data is from REST Countries, a free and open source API.
