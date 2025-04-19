@@ -1,15 +1,54 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.home {
   background-color: #eee;
-  height: 100vh;
-  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding-top: 2rem;
+}
+
+.app-header {
+  margin-bottom: 1.5rem;
+}
+
+.app-logo {
+  width: 600px;
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10rem;
 }
 
 .search-bar-container {
-  padding-top: 20vw;
   width: 40%;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   min-width: 200px;
+}
+
+.fade-in {
+  animation: fadeInFromBack 0.5s ease-out;
+}
+
+@keyframes fadeInFromBack {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

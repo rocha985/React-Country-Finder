@@ -1,7 +1,24 @@
 .search-result {
-  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 .search-result:hover {
-  background-color: #efefef;
+  background-color: #f0f0f0;
+}
+
+.search-result img {
+  width: 30px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.search-result p {
+  margin: 0;
+  font-size: 1rem;
 }

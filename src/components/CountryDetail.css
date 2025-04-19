@@ -1,0 +1,134 @@
+body {
+  background-color: #eee;
+}
+
+.country-detail {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.country-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.country-flag {
+  width: 150px;
+  height: auto;
+  margin-right: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.country-flag:hover {
+  transform: scale(1.05);
+}
+
+.country-info h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.country-info p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.country-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  animation: fadeInDetails 1s ease-out 0.5s forwards;
+}
+
+@keyframes fadeInDetails {
+  to {
+    opacity: 1;
+  }
+}
+
+.detail-item {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  animation: slideIn 1s ease-out forwards;
+}
+
+.detail-item strong {
+  font-weight: bold;
+  background: none;
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .country-details {
+    grid-template-columns: 1fr;
+  }
+
+  .country-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .country-info h1 {
+    font-size: 1.8rem;
+  }
+
+  .country-info p {
+    font-size: 1rem;
+  }
+}
+
+.back-button {
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+  animation: slideIn 1s ease-out forwards;
+}
+
+.back-button:hover {
+  background-color: #dedede;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s forwards;
+  }
+  
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+  }
